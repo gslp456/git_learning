@@ -1,0 +1,13 @@
+git init
+vi names.txt
+git add .
+git status
+git commit -m "names.txt file is added"
+git log
+vi names.txt --add some data
+git status
+git commit -m "names.txt file is modified"
+git status
+rm names.txt
+git stash pop
+git restore names.txt
