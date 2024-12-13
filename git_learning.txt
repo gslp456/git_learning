@@ -1,0 +1,23 @@
+This is running notes for learning Git and GitHub.
+
+What is git:
+	Git is a versioning tool that tracks the changes in which it is initialized and makes it easier to switch between different versions, rever to old version or delete the version of the code that is not required, push the changes to the remote code reopsitories like GitHub/Nexus/Jfrog. Git will also enable us to pull(Download) the code from the remote repository and work locally on the same code by any no.of developers.
+
+What is GitHub:
+	GitHub is a distributed version control system where each and very person can contribute to the project from his or her own machine locally and later push the changes to the actual git remote repository. We can make a copy of the code in our local system andwork independently.
+
+Commands:
+
+To work with git,first we need to identify which directory is our working directory where we develop or store the code/files related to the application we are developing. Ideally we start by creating a new directory and then initialize the git repository there.
+
+Example:
+	1.Make a new directory: mkdir projectone
+	2.Change to directory:  cd projectone
+	3.Initialize git repo:  git init (Creates a hidden directory ".git" which contains the config files etc to track changes
+	4.Add/Create files: vi firstfile.txt 
+	5.Check the status of git: "git status" #This will give the status of the repo. In this case : Untracked files are present
+		firstfile.txt
+	6.Add the untracked file to the repo: "git add firstfile.txt" && "git status" #This will add files to repo and says that firs		tfile.txt is available for commit (Listed under changes to be committed)
+	7.Commit the changes : "git commit -m "This is my first commint" && "git status" #It will commit and says no files are to com		mit
+	
+
