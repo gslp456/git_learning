@@ -6,11 +6,15 @@ What is git:
 What is GitHub:
 	GitHub is a distributed version control system where each and very person can contribute to the project from his or her own machine locally and later push the changes to the actual git remote repository. We can make a copy of the code in our local system andwork independently.
 
+Tools used : 
+	1. "git" for CLI 
+	2. "gh" for GitHub CLI 
 Commands:
 
-To work with git,first we need to identify which directory is our working directory where we develop or store the code/files related to the application we are developing. Ideally we start by creating a new directory and then initialize the git repository there.
+To work with git,first we need to identify which directory is our working directory where we develop or store the code/files related to the application we are developing. Ideally we start by creating a new directory and then initialize the git repository there and then start working.
 
-Example:
+Commands in the order of learning:
+
 	1.Make a new directory: mkdir projectone
 	2.Change to directory:  cd projectone
 	3.Initialize git repo:  git init (Creates a hidden directory ".git" which contains the config files etc to track changes
@@ -19,5 +23,13 @@ Example:
 		firstfile.txt
 	6.Add the untracked file to the repo: "git add firstfile.txt" && "git status" #This will add files to repo and says that firs		tfile.txt is available for commit (Listed under changes to be committed)
 	7.Commit the changes : "git commit -m "This is my first commint" && "git status" #It will commit and says no files are to com		mit and working tree is clean
-	
+	8.Login to the remote repository (setup password less authentication using SSH) 
+		> On local machine - create an ssh public key using (ssh-keygen) - pass email id associated with github
+		    Ex: ssh-keygen -t ed25519 -C "your_email@example.com" 
+			# Accept the default values and when prompted for passphrase enter one and remember the same
+		> Run this command eval "$(ssh-agent -s)" to start the ssh-agent in the background
+		> Run this command ssh-add ~/.ssh/id_ed25519 to add your SSH private key to the ssh-agent.
+		> Once you run the command, you will be prompted to put in your passphrase. Type the passphrase you created initially 		       and press Enter.
+		> Run this command cat ~/.ssh/id_ed25519.pub to get the SSH public key. 
+		> Login to github from browser and copy that key value to teh SSH & GPG Keys section of the settings	
 
