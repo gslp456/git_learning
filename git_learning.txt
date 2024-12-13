@@ -18,6 +18,6 @@ Example:
 	5.Check the status of git: "git status" #This will give the status of the repo. In this case : Untracked files are present
 		firstfile.txt
 	6.Add the untracked file to the repo: "git add firstfile.txt" && "git status" #This will add files to repo and says that firs		tfile.txt is available for commit (Listed under changes to be committed)
-	7.Commit the changes : "git commit -m "This is my first commint" && "git status" #It will commit and says no files are to com		mit
+	7.Commit the changes : "git commit -m "This is my first commint" && "git status" #It will commit and says no files are to com		mit and working tree is clean
 	
 
