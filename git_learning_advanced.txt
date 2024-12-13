@@ -1,0 +1,15 @@
+In this section we shall see the advanced feature of git
+
+1. git branching:
+
+	Branching is a very powerful feature of git which will enable the developers/users to create a separate workspace (called as a branch) for themselves for isolating the features that they are building and are expected to be combined(called as branch) with the main code (called main or master branch)
+
+Types of branches:
+
+	1.Master/Main branch: Master branch also called as main branch contains the full code of the application that are combination 	       of several code files developed by different developers in their own system. This branch is the final form of the applicat	    ion that is ready to be deployed into any environment.
+	2.Feature branch: Feature branch is carved out from the master branch to add more new features which are under development 	       but not yet merged to master branch. For example, udemy has video learning platform active in production, but they plan to 	    introduce a new feature called "Hands-On labs". To build this a feature branch called "feature_handsonlab" will be created 		 and all the work regarding that will be done under that branch without disturbing the Master branch.Once the development of	      this feature is completed,testing will be done and the code will be approved.Later,this feature branch will be merged with 	   the main/master branch to be able to actively test the full application which is packed with the feature branch code.
+	3.Release branch: Release branch is nothing but the feature rich main branch that is readily available for release but not 
+	  the actual main branch. Because main branch is actively used for development, it is not ideal to release the main branch as 	       is to the production. Instead same replica of main branch is created with a release version number which is the stable one.	    For example: Udemy with only video classes is v1.0 release (Udemy_V1.0) 
+		       Udemy with video classes+Handsonlabs is v2.0 release (Udemy_V2.0)
+	4.Hotfix branch: Hotfix branch is like a an adhoc release where if any vulnerability or any fix is to be done to address a 
+	  high severity issue that needs an immediate fix, then hotfix branch is created and the issue is addressed.
